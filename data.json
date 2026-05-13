@@ -1,0 +1,353 @@
+[
+    {
+        "id": 1,
+        "nombre": "Tijeras Amarillas",
+        "cantidad": 0,
+        "minimo": 3,
+        "precio": 15.0
+    },
+    {
+        "id": 2,
+        "nombre": "Martillo de U\u00f1a",
+        "cantidad": 0,
+        "minimo": 2,
+        "precio": 25.5
+    },
+    {
+        "id": 3,
+        "nombre": "Alicate",
+        "cantidad": 7,
+        "minimo": 2,
+        "precio": 18.0
+    },
+    {
+        "id": 4,
+        "nombre": "Destornillador Estrella",
+        "cantidad": 12,
+        "minimo": 4,
+        "precio": 12.0
+    },
+    {
+        "id": 5,
+        "nombre": "Cinta M\u00e9trica 5m",
+        "cantidad": 15,
+        "minimo": 5,
+        "precio": 14.5
+    },
+    {
+        "id": 6,
+        "nombre": "Llave Inglesa 10\"",
+        "cantidad": 6,
+        "minimo": 2,
+        "precio": 32.0
+    },
+    {
+        "id": 7,
+        "nombre": "Taladro Inal\u00e1mbrico 18V",
+        "cantidad": 3,
+        "minimo": 1,
+        "precio": 280.0
+    },
+    {
+        "id": 8,
+        "nombre": "Sierra para Metales",
+        "cantidad": 7,
+        "minimo": 2,
+        "precio": 22.0
+    },
+    {
+        "id": 9,
+        "nombre": "Nivel de Burbuja 24\"",
+        "cantidad": 4,
+        "minimo": 2,
+        "precio": 45.0
+    },
+    {
+        "id": 10,
+        "nombre": "Juego de Llaves Allen",
+        "cantidad": 9,
+        "minimo": 3,
+        "precio": 19.9
+    },
+    {
+        "id": 11,
+        "nombre": "Esp\u00e1tula de Acero 3\"",
+        "cantidad": 14,
+        "minimo": 5,
+        "precio": 8.5
+    },
+    {
+        "id": 12,
+        "nombre": "Brocha para Pintar 2\"",
+        "cantidad": 20,
+        "minimo": 10,
+        "precio": 6.0
+    },
+    {
+        "id": 13,
+        "nombre": "Rodillo para Pintura",
+        "cantidad": 18,
+        "minimo": 5,
+        "precio": 11.0
+    },
+    {
+        "id": 14,
+        "nombre": "Caja de Clavos 2\"",
+        "cantidad": 50,
+        "minimo": 15,
+        "precio": 5.5
+    },
+    {
+        "id": 15,
+        "nombre": "Tornillos Madera 100u",
+        "cantidad": 40,
+        "minimo": 10,
+        "precio": 14.0
+    },
+    {
+        "id": 16,
+        "nombre": "Pegamento PVC 4oz",
+        "cantidad": 25,
+        "minimo": 8,
+        "precio": 13.0
+    },
+    {
+        "id": 17,
+        "nombre": "Cinta Aislante Negra",
+        "cantidad": 30,
+        "minimo": 10,
+        "precio": 4.5
+    },
+    {
+        "id": 18,
+        "nombre": "Esmeril Angular 4.5\"",
+        "cantidad": 2,
+        "minimo": 1,
+        "precio": 215.0
+    },
+    {
+        "id": 19,
+        "nombre": "Disco de Corte Metal",
+        "cantidad": 45,
+        "minimo": 20,
+        "precio": 5.0
+    },
+    {
+        "id": 20,
+        "nombre": "Lentes de Seguridad",
+        "cantidad": 12,
+        "minimo": 5,
+        "precio": 9.0
+    },
+    {
+        "id": 21,
+        "nombre": "Guantes de Trabajo",
+        "cantidad": 24,
+        "minimo": 12,
+        "precio": 10.5
+    },
+    {
+        "id": 22,
+        "nombre": "Casco de Protecci\u00f3n",
+        "cantidad": 6,
+        "minimo": 3,
+        "precio": 28.0
+    },
+    {
+        "id": 23,
+        "nombre": "Maza de Goma",
+        "cantidad": 5,
+        "minimo": 2,
+        "precio": 17.5
+    },
+    {
+        "id": 24,
+        "nombre": "Serrucho de Carpintero",
+        "cantidad": 4,
+        "minimo": 2,
+        "precio": 38.0
+    },
+    {
+        "id": 25,
+        "nombre": "Form\u00f3n para Madera",
+        "cantidad": 8,
+        "minimo": 3,
+        "precio": 16.0
+    },
+    {
+        "id": 26,
+        "nombre": "Pistola de Silicona",
+        "cantidad": 10,
+        "minimo": 4,
+        "precio": 15.5
+    },
+    {
+        "id": 27,
+        "nombre": "Barras de Silicona x12",
+        "cantidad": 35,
+        "minimo": 15,
+        "precio": 7.0
+    },
+    {
+        "id": 28,
+        "nombre": "Candado de Bronce 40mm",
+        "cantidad": 15,
+        "minimo": 5,
+        "precio": 22.0
+    },
+    {
+        "id": 29,
+        "nombre": "Tubo Fluorescente LED",
+        "cantidad": 22,
+        "minimo": 8,
+        "precio": 18.5
+    },
+    {
+        "id": 30,
+        "nombre": "Interruptor de Pared",
+        "cantidad": 40,
+        "minimo": 15,
+        "precio": 9.5
+    },
+    {
+        "id": 31,
+        "nombre": "Tomacorriente Doble",
+        "cantidad": 38,
+        "minimo": 15,
+        "precio": 11.0
+    },
+    {
+        "id": 32,
+        "nombre": "Cable El\u00e9ctrico 12AWG",
+        "cantidad": 10,
+        "minimo": 3,
+        "precio": 120.0
+    },
+    {
+        "id": 33,
+        "nombre": "Llave T\u00e9rmica 20A",
+        "cantidad": 12,
+        "minimo": 5,
+        "precio": 35.0
+    },
+    {
+        "id": 34,
+        "nombre": "Silicona L\u00edquida Tubo",
+        "cantidad": 18,
+        "minimo": 6,
+        "precio": 14.0
+    },
+    {
+        "id": 35,
+        "nombre": "Escuadra Met\u00e1lica 12\"",
+        "cantidad": 7,
+        "minimo": 3,
+        "precio": 24.0
+    },
+    {
+        "id": 36,
+        "nombre": "Cutter Profesional",
+        "cantidad": 15,
+        "minimo": 5,
+        "precio": 12.5
+    },
+    {
+        "id": 37,
+        "nombre": "Hojas de Repuesto Cutter",
+        "cantidad": 25,
+        "minimo": 10,
+        "precio": 4.0
+    },
+    {
+        "id": 38,
+        "nombre": "Manguera de Riego 15m",
+        "cantidad": 5,
+        "minimo": 2,
+        "precio": 55.0
+    },
+    {
+        "id": 39,
+        "nombre": "Abrazadera de Metal 1\"",
+        "cantidad": 60,
+        "minimo": 20,
+        "precio": 2.5
+    },
+    {
+        "id": 40,
+        "nombre": "Te de PVC 1/2\"",
+        "cantidad": 50,
+        "minimo": 20,
+        "precio": 1.8
+    },
+    {
+        "id": 41,
+        "nombre": "Codo de PVC 90\u00b0",
+        "cantidad": 55,
+        "minimo": 20,
+        "precio": 1.5
+    },
+    {
+        "id": 42,
+        "nombre": "Lija de Agua #100",
+        "cantidad": 100,
+        "minimo": 30,
+        "precio": 1.2
+    },
+    {
+        "id": 43,
+        "nombre": "Lija de Madera #80",
+        "cantidad": 80,
+        "minimo": 30,
+        "precio": 1.5
+    },
+    {
+        "id": 44,
+        "nombre": "Broca Concreto 1/4\"",
+        "cantidad": 20,
+        "minimo": 8,
+        "precio": 7.5
+    },
+    {
+        "id": 45,
+        "nombre": "Tarugo Pl\u00e1stico x100",
+        "cantidad": 15,
+        "minimo": 5,
+        "precio": 10.0
+    },
+    {
+        "id": 46,
+        "nombre": "Llave de Lavadero",
+        "cantidad": 8,
+        "minimo": 3,
+        "precio": 45.0
+    },
+    {
+        "id": 47,
+        "nombre": "Cinta Teflon",
+        "cantidad": 40,
+        "minimo": 15,
+        "precio": 2.0
+    },
+    {
+        "id": 48,
+        "nombre": "Pala de Punta Acero",
+        "cantidad": 4,
+        "minimo": 2,
+        "precio": 48.0
+    },
+    {
+        "id": 49,
+        "nombre": "Pico de Construcci\u00f3n",
+        "cantidad": 3,
+        "minimo": 1,
+        "precio": 52.0
+    },
+    {
+        "id": 50,
+        "nombre": "Carretilla de Obra",
+        "cantidad": 2,
+        "minimo": 1,
+        "precio": 185.0
+    }
+   
+]
