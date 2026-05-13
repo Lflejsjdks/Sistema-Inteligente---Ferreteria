@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Stock - Distribuciones Molina</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #64748b;
+            --danger: #ef4444;
+            --success: #10b981;
+            --bg: #f8fafc;
+        }
+
+        body { 
+            font-family: 'Inter', system-ui, sans-serif; 
+            background: var(--bg); 
+            color: #1e293b;
+            margin: 0; 
+            padding: 20px; 
+        }
+
+        .container { 
+            max-width: 1100px; 
+            margin: auto; 
+            background: white; 
+            padding: 40px; 
+            border-radius: 24px; 
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); 
+        }
+
+        header { text-align: center; margin-bottom: 30px; }
+        h1 { color: var(--primary); font-size: 2.5rem; margin-bottom: 5px; }
+        .sede { color: var(--secondary); font-weight: 600; letter-spacing: 1px; }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+
+        .camera-section {
+            background: #0f172a;
+            padding: 15px;
+            border-radius: 20px;
+            border: 4px solid var(--primary);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+        }
+
+        .camera-section img {
+            width: 100%;
+            border-radius: 12px;
+            display: block;
+            background: #1e293b;
+        }
+
+        .inventory-section {
+            background: #ffffff;
+        }
+
+        table { 
+            width: 100%; 
+            border-collapse: separate; 
+            border-spacing: 0 10px; 
+        }
+
+        th { 
+            background: var(--primary); 
+            color: white; 
+            padding: 15px; 
+            text-align: left;
+            border-radius: 8px;
+        }
+
+        td { 
+            padding: 15px; 
+            background: #f1f5f9;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        tr td:first-child { border-radius: 12px 0 0 12px; font-weight: bold; }
+        tr td:last-child { border-radius: 0 12px 12px 0; }
+
+        .badge {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        .alert { background: #fee2e2; color: var(--danger); }
+        .ok { background: #d1fae5; color: var(--success); }
+
+        .price-tag { color: var(--primary); font-weight: bold; }
+
+        @media (max-width: 900px) {
+            .dashboard-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agente Inteligente de Visión Artificial</h1>
+            <p class="sede">CHINCHA ALTA • DISTRIBUCIONES MOLINA 2026</p>
+        </header>
+        
+        <div class="dashboard-grid">
+            <!-- Columna Izquierda: Cámara -->
+            <div class="camera-section">
+                <img src="/video_feed" alt="Streaming en tiempo real">
+                <p style="color: white; text-align: center; margin-top: 10px; font-size: 0.9rem;">
+                    🔴 Monitoreo de Visión Computacional Activo
+                </p>
+            </div>
+
+            <!-- Columna Derecha: Tabla -->
+            <div class="inventory-section">
+                <h3 style="margin-top: 0;">Gestión de Inventario</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th style="text-align: center;">Stock</th>
+                            <th>Precio</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stock-table-body">
+                        <!-- Se llena automáticamente cuando el agente identifica el producto -->
+                        <tr><td colspan="4" style="text-align:center;">Identificando Producto...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function updateStock() {
+            try {
+                const res = await fetch('/api/stock');
+                const data = await res.json();
+                const tableBody = document.getElementById('stock-table-body');
+
+                // Si el servidor devuelve datos (ya identificado)
+                if (data && data.length > 0) {
+                    tableBody.innerHTML = ''; // Limpiamos el mensaje de "Identificando..."
+
+                    data.forEach(item => {
+                        const isLow = item.cantidad <= item.minimo;
+                        tableBody.innerHTML += `
+                            <tr>
+                                <td>${item.nombre}</td>
+                                <td style="text-align: center;">${item.cantidad}</td>
+                                <td class="price-tag">S/ ${item.precio.toFixed(2)}</td>
+                                <td>
+                                    <span class="badge ${isLow ? 'alert' : 'ok'}">
+                                        ${isLow ? 'Reabastecer' : 'Óptimo'}
+                                    </span>
+                                </td>
+                            </tr>
+                        `;
+                    });
+                }
+            } catch (e) {
+                console.error("Error en la conexión con el agente");
+            }
+        }
+
+        // Consulta cada 1 segundo para actualizar el stock en tiempo real
+        setInterval(updateStock, 1000);
+        updateStock();
+    </script>
+</body>
+</html>
